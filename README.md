@@ -1,1 +1,1 @@
-# LMS-WEB-API
+# health-assistant-api
