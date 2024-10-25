@@ -59,6 +59,8 @@ app.use('/api/papers', require('./routes/paper'));
 
 app.use('/api/student', require('./routes/student'));
 
+app.use('/api/knowledge', require('./routes/knowledge'));
+
 const PORT = process.env.PORT || 5000;
 
 
