@@ -58,7 +58,8 @@ router.get('/get-knowledgebase/:user_id', async (req, res) => {
     const userKnowledgebase = await Knowledgebase.findOne({ user_id });
 
     if (!userKnowledgebase) {
-      return res.status(404).json({ message: 'No knowledge base found for this user.' });
+      return res.status(200).json([]);
+      // return res.status(404).json({ message: 'No knowledge base found for this user.' });
     }
 
     res.status(200).json(userKnowledgebase.knowledgebase);

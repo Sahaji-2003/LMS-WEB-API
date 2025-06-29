@@ -43,7 +43,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 // const customerRouter = require('./routes/customers');
-mongoose.connect('mongodb+srv://sysmatics1:sys12matics%4034@sysmatics.f5saypm.mongodb.net/', {
+mongoose.connect('mongodb+srv://anupdhoble15:VBxkevAcmzBnvywy@cluster0.niaty5l.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
     // useCreateIndex: true
@@ -61,7 +61,7 @@ app.use('/api/student', require('./routes/student'));
 
 app.use('/api/knowledge', require('./routes/knowledge'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 
 app.use(cors({
